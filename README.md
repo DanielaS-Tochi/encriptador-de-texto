@@ -25,7 +25,7 @@ Interfaz Intuitiva: Fácil de usar, con una interfaz clara y directa.
 Clona este repositorio:
 
 git clone https://github.com/DanielaS-Tochi/encriptador-de-texto.git
-Navega al directorio del proyecto: 
+Navega al directorio del proyecto:
 cd tu-repositorio
 
 #Uso
@@ -45,10 +45,8 @@ Abre un Pull Request.
 
 #Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
 
 #Contacto
 
 Si tienes algún comentario, pregunta o sugerencia, no dudes en contactarme a través de danielastochi@gmail.com.
-
-
