@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nova+Square&family=Sedgwick+Ave+Display&family=Tektur:wght@600&display=swap"
-        rel="stylesheet">
+
     <title>Encriptador de Texto</title>
 </head>
 
@@ -21,14 +17,17 @@
         </a>
     </header>
     <main>
-        <div class="encriptador">
+        <section class="encriptador">
             <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
-            <p class="encriptador-aviso">Sólo minúsculas y sin acentos</p>
-            <div class="encriptador-container">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+            <div class="encriptador-aviso">
+                <img src="./img/aviso.svg" alt="Imagen de Aviso" class="img-aviso">
+                <p class="texto-aviso">Sólo letras minúsculas y sin acentos</p>
             </div>
-        </div>
+            <div class="encriptador-container">
+                <button type="submit" class="btn-encriptar">Encriptar</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
 
         <section class="card">
             <div class="card-container">
@@ -41,15 +40,14 @@
         </section>
 
     </main>
-    <script src="/index.js"></script>
+    <script src="./js/index.js"></script>
 
     <footer>
         <p class="copyright">&copy; 2024 | Design by Daniela S. Tochi</p>
         <a href="https://linkedin.com/in/daniela-silvana-tochi" rel="">
-            <!-- <a href="https://linkedin.com/in/daniela-silvana-tochi" rel=""> -->
             <img src="./img/linkedin.svg" alt="Logo de LinkedIn" class="linked">
         </a>
-        <a href="#" rel="">
+        <a href="https://github.com/DanielaS-Tochi" rel="">
             <img src="./img/github.svg" alt="Logo de Github" class="git">
         </a>
     </footer>

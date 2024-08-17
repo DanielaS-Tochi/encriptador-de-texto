@@ -5,7 +5,7 @@ La aplicación es completamente responsive, adaptándose a dispositivos de escri
 
 #Descripción
 
-El Encriptador de Texto es una herramienta desarrolada como parte del curso "Practicando lógica de programación: Challenge Encriptador de texto". Permite a los usuarios
+El Encriptador de Texto es una herramienta desarrollada como parte del curso "Practicando lógica de programación: Challenge Encriptador de texto". Permite a los usuarios
 ingresar un texto y obtener una versión encriptada del mismo, así como desencriptar textos previamente encriptados.
 
 #Características
@@ -25,7 +25,9 @@ Interfaz Intuitiva: Fácil de usar, con una interfaz clara y directa.
 Clona este repositorio:
 
 git clone https://github.com/DanielaS-Tochi/encriptador-de-texto.git
+
 Navega al directorio del proyecto:
+
 cd tu-repositorio
 
 #Uso
