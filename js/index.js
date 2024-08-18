@@ -57,9 +57,17 @@ function mostrarResultado() {
     evaluar.style.visibility = "visible";
 }
 
-// Manejar el evento de copiar
+
 copiarBtn.addEventListener("click", () => {
-    evaluar.select();
-    document.execCommand("copy");
-    alert("Texto copiado al portapapeles");
+    // Obtener el contenido del textarea
+    const textToCopy = evaluar.value;
+
+    // Usar la API del portapapeles para copiar el texto
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            alert("Texto copiado al portapapeles");
+        })
+        .catch(err => {
+            console.error("Error al copiar el texto: ", err);
+        });
 });
