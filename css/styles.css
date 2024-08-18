@@ -53,9 +53,6 @@ header .logo {
 main {
   display: flex;
   flex-direction: row;
-  /* background: var(--Backg); */
-  /* background-size: cover;
-  background-position: center; */
 }
 
 .encriptador {
