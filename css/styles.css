@@ -47,6 +47,7 @@ header .logo {
   align-items: flex-start;
   width: 120px;
   height: 48px;
+  background: none;
 }
 
 main {
@@ -70,7 +71,7 @@ main {
   font-size: 32px;
   line-height: 48px;
   outline: none;
-  border: 1px solid var(--Gray);
+  border: 1px solid var(--Medium-Blue);
   border-radius: 15px;
   resize: none;
 }
@@ -168,7 +169,7 @@ main {
 }
 
 .card-container {
-  width: 250px;
+  width: 200px;
   margin: auto;
   margin-top: 50%;
   background: var(--Font);
@@ -242,6 +243,10 @@ main {
 .btn-desencriptar:hover,
 .btn-copiar:hover {
   transform: scale(0.97);
+}
+
+.btn-copiar.visible {
+  visibility: visible;
 }
 
 footer {
@@ -329,8 +334,13 @@ footer {
 @media (max-width: 720px) {
   header .logo {
     width: 100%;
-    background: #f8f9fa;
+    background: none;
     padding: 2px;
+  }
+  .text-area {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
   }
 
   .encriptador {
