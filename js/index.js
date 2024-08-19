@@ -28,23 +28,35 @@ function desencriptar(texto) {
     return textoDesencriptado;
 }
 
+// Función para validar el texto (solo letras minúsculas y espacios)
+function validarTexto(texto) {
+    const regex = /^[a-z\s]+$/;
+    return regex.test(texto);
+}
+
 // Manejar el evento de encriptar
 encriptarBtn.addEventListener("click", () => {
     const texto = textArea.value;
-    if (texto) {
+    
+    if (texto && validarTexto(texto)) {
         const textoEncriptado = encriptar(texto);
         evaluar.value = textoEncriptado;
         mostrarResultado();
+    } else {
+        alert("Por favor, ingresa solo letras minúsculas y espacios.");
     }
 });
 
 // Manejar el evento de desencriptar
 desencriptarBtn.addEventListener("click", () => {
     const texto = textArea.value;
-    if (texto) {
+
+    if (texto && validarTexto(texto)) {
         const textoDesencriptado = desencriptar(texto);
         evaluar.value = textoDesencriptado;
         mostrarResultado();
+    } else {
+        alert("Por favor, ingresa solo letras minúsculas y espacios.");
     }
 });
 
@@ -57,12 +69,10 @@ function mostrarResultado() {
     evaluar.style.visibility = "visible";
 }
 
-
+// Copiar texto al portapapeles
 copiarBtn.addEventListener("click", () => {
-    // Obtener el contenido del textarea
     const textToCopy = evaluar.value;
 
-    // Usar la API del portapapeles para copiar el texto
     navigator.clipboard.writeText(textToCopy)
         .then(() => {
             alert("Texto copiado al portapapeles");
