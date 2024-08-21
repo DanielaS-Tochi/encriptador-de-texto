@@ -64,6 +64,7 @@ main {
 .text-area {
   width: 660px;
   height: 288px;
+  padding: 10px;
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
