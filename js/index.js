@@ -37,13 +37,13 @@ function validarTexto(texto) {
 // Manejar el evento de encriptar
 encriptarBtn.addEventListener("click", () => {
     const texto = textArea.value;
-    
+
     if (texto && validarTexto(texto)) {
         const textoEncriptado = encriptar(texto);
         evaluar.value = textoEncriptado;
         mostrarResultado();
     } else {
-        alert("Por favor, ingresa solo letras minúsculas y espacios.");
+        alert("Por favor, ingresa solo letras minúsculas y sin acentos ni caracteres especiales");
     }
 });
 
@@ -56,7 +56,7 @@ desencriptarBtn.addEventListener("click", () => {
         evaluar.value = textoDesencriptado;
         mostrarResultado();
     } else {
-        alert("Por favor, ingresa solo letras minúsculas y espacios.");
+        alert("Por favor, ingresa solo letras minúsculas y sin acentos ni caracteres especiales");
     }
 });
 
